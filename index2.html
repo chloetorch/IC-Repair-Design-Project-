@@ -10,6 +10,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="media.css">
    <title>IC "Repair Design Project"</title>
 </head>
 
@@ -33,16 +34,19 @@
    </header>
    <main>
       <section class="section__main">
-         <div class="container section__main-left">
-            <h1>Turnkey Repair in the<br>
-               city of <span class="section__main-colortext-Rostov">Rostov-on-Don</span></h1>
-            <p class="section__main_text">Get ready-made turnkey repairs on time<br>
-               with work time saving up to 45 days and 20% from<br>
-               cost of materials due to the organization of work</p>
-            <button class="button section__main-buttons">CALCULATE THE COST</button>
-            <button class="button section__main-buttons">SUBMIT YOUR APPLICATION</button>
+         <div class="section__main-overlay">
+            <div class="container">
+               <div class="section__main-left">
+                  <h1>Turnkey Repair in the<br>
+                     city of <span class="section__main-colortext-Rostov">Rostov-on-Don</span></h1>
+                  <p class="section__main_text">Get ready-made turnkey repairs on time<br>
+                     with work time saving up to 45 days and 20% from<br>
+                     cost of materials due to the organization of work</p>
+                  <button class="button section__main-buttons">CALCULATE THE COST</button>
+                  <button class="button section__main-buttons">SUBMIT YOUR APPLICATION</button>
+               </div>
+            </div>
          </div>
-         <div class="section__main-overlay"></div>
       </section>
       <section class="section__projects">
          <div class="container ">
@@ -54,8 +58,12 @@
                      on the site. For 14 years on
                      in the construction market we have made happy more than 1000 families
                   </p>
-                  <div class="section__projects-img1">
-                     <img src="images/room.jpg" alt="room">
+                  <div class="section__projects-mobile">
+                     <img class="projects__photo_mobile" src="images/room.jpg" alt="room">
+                     <div>
+                        <img class="projects__icon-back_mobile" src="images/back.svg" alt="back" />
+                        <img class="projects__icon-forward_mobile" src="images/forward.svg" alt="forward" />
+                     </div>
                   </div>
                   <div class="section__projects-block">
                      <div>
@@ -86,14 +94,14 @@
                </div>
                <div class="section__projects-photo">
                   <ul class="section__projects-name">
-                     <li> <!--сделать подчеркивание ниже городов-->
-                        <a href="#" class="section__projects-name-item">Rostov-on-Don, Admiral</a>
+                     <li class="section__projects-name-item">
+                        <a href="#">Rostov-on-Don, Admiral</a>
                      </li>
-                     <li>
-                        <a href="#" class="section__projects-name-item">Sochi Thieves</a>
+                     <li class="section__projects-name-item">
+                        <a href="#">Sochi Thieves</a>
                      </li>
-                     <li>
-                        <a href="#" class="section__projects-name-item">Rostov-on-Don Patriotic</a>
+                     <li class="section__projects-name-item">
+                        <a href="#">Rostov-on-Don Patriotic</a>
                      </li>
                   </ul>
                   <div class="section__projects-img">
@@ -134,10 +142,12 @@
                   </label>
                   <button class="button label-button-form" type="submit" name="submit_button">Submit</button>
                </div>
-               <label class="checkbox">
-                  <input type="checkbox" required value="yes">
-                  <span class="i-agree-text">I agree to the processing of personal data</span>
-               </label>
+               <div class="checkbox-registration-mobile">
+                  <label class="checkbox">
+                     <input type="checkbox" required value="yes">
+                     <span class="i-agree-text">I agree to the processing of personal data</span>
+                  </label>
+               </div>
             </form>
          </div>
       </section>
@@ -303,6 +313,13 @@
                      <img class="fantasies-pics-item-three-point-two" src="images/fantasies3.2.jpg">
                      <img class="fantasies-pics-item-four" src="images/fantasies4.jpg">
                   </div>
+                  <div class="fantasies-pics-mobile">
+                     <img src="images/mobile-clockroom.jpg">
+                     <div>
+                        <img class="projects__icon-back_mobile" src="images/back.svg" alt="back">
+                        <img class="projects__icon-forward_mobile" src="images/forward.svg" alt="forward">
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -402,7 +419,7 @@
             <div class="our-clients-background-right"></div>
          </div>
       </section>
-      <section class="questions">
+      <section class="section__questions">
          <div class="questions-overlay">
             <div class="container">
                <div class="container-form-questions">
@@ -439,6 +456,7 @@
                         </div>
                      </div>
                   </form>
+                  <div class="map-mobile"><img src="images/map-mobile.jpg" alt="map"></div>
                   <h3 class="address">
                      Rostov-on-Don, Nansen St., 239 Shopping Center<br>
                      Decorum Tel +7 (928) 768 32 29

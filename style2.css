@@ -1,3 +1,5 @@
+/* general */
+
 body {
    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
    font-style: normal;
@@ -37,9 +39,14 @@ h3 {
    line-height: 25px;
 }
 
+img {
+   max-width: 100%;
+}
+
 .container {
    max-width: 1263px;
    margin: 0 auto;
+   width: 100%;
 }
 
 .button {
@@ -125,6 +132,7 @@ h3 {
    height: 707px;
    padding: 194px;
    position: relative;
+   max-width: 100%;
 }
 
 .section__main-overlay {
@@ -138,8 +146,8 @@ h3 {
 }
 
 .section__main-left {
-   position: relative;
-   z-index: 1;
+   margin-top: 194px;
+   margin-left: 60px;
 }
 
 .section__main-colortext-Rostov {
@@ -165,6 +173,7 @@ h3 {
 .section__main-buttons:hover {
    background: #E3B873;
    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+   border: 1px solid #E3B873;
 }
 
 /* section__projects */
@@ -198,7 +207,7 @@ h3 {
    margin: 0;
 }
 
-.section__projects-img1 {
+.section__projects-mobile {
    display: none;
 }
 
@@ -281,8 +290,10 @@ h3 {
    display: flex;
    display: -webkit-box;
    display: -ms-flexbox;
+   justify-content: flex-start;
    list-style-type: none;
    text-decoration: none;
+   padding: 0;
 }
 
 .section__projects-name-item {
@@ -292,23 +303,23 @@ h3 {
    font-size: 14px;
    line-height: 19px;
    text-transform: uppercase;
-   color: rgba(255, 255, 255, 0.3);
    margin-right: 61px;
-   text-decoration: none;
 }
 
 .section__projects-name-item a {
    font-size: 14px;
    line-height: 19px;
-   margin-right: 61px;
+   color: rgba(255, 255, 255, 0.3);
+   text-decoration: none;
 }
 
-.section__projects-name-item:hover {
+.section__projects-name-item a:hover {
    color: #e3b873;
    -webkit-transition: 0.2s;
    -o-transition: 0.2s;
    transition: 0.2s;
    border-bottom: 1px solid #E3B873;
+   padding-bottom: 6px;
 }
 
 .section__projects-img {
@@ -426,7 +437,6 @@ h3 {
    color: #363636;
 }
 
-
 input {
    outline: 0;
    border: 0;
@@ -492,6 +502,7 @@ input {
    justify-content: space-between;
    margin-top: 31px;
    gap: 30px;
+   flex-wrap: wrap;
 }
 
 .repair-types-items {
@@ -539,7 +550,6 @@ li {
    font-size: 13px;
    line-height: 27px;
    color: #959595;
-
    position: relative;
    z-index: 2;
 }
@@ -682,6 +692,7 @@ li {
    gap: 5px;
    max-width: 408px;
    width: 100%;
+   padding-bottom: 7px;
 }
 
 .label-measurer-input::placeholder {
@@ -799,6 +810,10 @@ li {
 .fantasies-wrapper {
    display: flex;
    justify-content: space-between;
+}
+
+.fantasies-pics-mobile {
+   display: none;
 }
 
 .fantasies-pics {
@@ -962,7 +977,7 @@ li {
 /*Form*/
 
 
-.questions {
+.section__questions {
    background-image: url(images/questionsbackground.jpg);
    background-size: cover;
    height: 954px;
@@ -1037,7 +1052,6 @@ li {
    gap: 58px;
    max-width: 100%;
    width: 231px;
-   231 45 58
 }
 
 .label-questions-input-q {
@@ -1108,6 +1122,10 @@ li {
 
 /*map*/
 
+
+.map-mobile {
+   display: none;
+}
 
 .address {
    text-align: center;
