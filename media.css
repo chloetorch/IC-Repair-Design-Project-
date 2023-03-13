@@ -102,6 +102,10 @@
       padding-top: 36px;
    }
 
+   .projects__block {
+      justify-content: center;
+   }
+
    .projects__block-item-text {
       font-size: 11px;
       line-height: 18px;
@@ -127,6 +131,8 @@
       margin-top: 36px;
       display: block;
       position: relative;
+      display: flex;
+      justify-content: center;
    }
 
    .projects__icon-back_mobile {
@@ -263,7 +269,7 @@
 
    .repair__types {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       width: 100%;
    }
 
@@ -376,7 +382,7 @@
 
 
    .container-form-questions {
-      margin: 173px 0 0 0;
+      margin: auto;
       padding: 0;
    }
 
